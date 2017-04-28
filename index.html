@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+    <!-- FKPageTransitions CSS file -->
+    <link href="/css/fkpagetransitions.min.css" rel="stylesheet" />
+
+</head>
+<body ontouchstart style="height: 100%">
+
+<div class="weui-tab">
+    <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+            <ul class="swipPage">
+                <li style="background: #0ac2d2">
+                    <header class="htmleaf-header">
+                        <h1>滑动页面1</h1>
+                        <div class="htmleaf-links">
+                            <a  href="http://www.baidu.com" ><span> baidu</span></a>
+                        </div>
+                    </header>
+                </li>
+                <li style="background: #7bb7fa">滑动页面2</li>
+                <li style="background: #60d7a9">滑动页面3</li>
+                <li style="background: #fdc162">滑动页面4</li>
+                <li style="background: #fd6a62">滑动页面5</li>
+                <li style="background: #f68dbb">滑动页面6</li>
+            </ul>
+        </div>
+        <div id="tab2" class="weui-tab__bd-item">
+            <h1>页面二</h1>
+        </div>
+        <div id="tab3" class="weui-tab__bd-item">
+            <h1>页面三</h1>
+        </div>
+        <div id="tab4" class="weui-tab__bd-item">
+            <h1>页面四</h1>
+        </div>
+    </div>
+
+    <div class="weui-tabbar">
+        <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+            <%--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>--%>
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_button.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">菜单一</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_msg.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">菜单二</p>
+        </a>
+        <a href="#tab3" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">菜单三</p>
+        </a>
+        <a href="#tab4" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_cell.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">菜单四</p>
+        </a>
+    </div>
+</div>
+
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="/js/jquery.min.js"></script> -->
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+<!-- 如果使用了某些拓展插件还需要额外的JS -->
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script>
+
+<!-- FKPageTransitions Javascript file -->
+<script src="js/fkpagetransitions.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+//  技术参考网址：      http://www.htmleaf.com/jQuery/Layout-Interface/201505201869.html
+        fkpage = $('.swipPage').FKPageTransitions();
+        var cindex = 12;
+        fkpage.setSlideMode(cindex);
+    });
+</script>
+
+</body>
+</html>
