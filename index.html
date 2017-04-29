@@ -9,9 +9,7 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
-    <!-- <link rel="stylesheet" href="E:/Git/localRepository/wangqinyu/css/weui.min.css"> -->
     <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
-	<!-- <link rel="stylesheet" href="E:/Git/localRepository/wangqinyu/css/jquery-weui.min.css"> -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/default.css">
     <!-- FKPageTransitions CSS file -->
@@ -77,7 +75,13 @@
             <!--</ul>-->
         </div>
         <div id="tab2" class="weui-tab__bd-item" >
-         	<a href="/page/resume.html"><span>查看</span></a>
+         	<ul class="swipPage">
+	            <li><img src="/images/0001.jpg" style="width:100%;height:95%;"></li>
+	            <li><img src="/images/0002.jpg" style="width:100%;height:95%;"></li>
+	            <li><img src="/images/0003.jpg" style="width:100%;height:95%;"></li>
+	            <li><img src="/images/0004.jpg" style="width:100%;height:95%;"></li>
+	            <li><img src="/images/0005.jpg" style="width:100%;height:95%;"></li>
+    		</ul>
         </div>
         <div id="tab3" class="weui-tab__bd-item">
             <article style="background-color: #d75f5a ;text-align: center;color: #2f3238">
@@ -125,6 +129,28 @@
             
             <div><img src="/images/wechat.jpg" style="width:100%;height:100%;"></div>
         </div>
+        <div id="tab5" class="weui-tabbar__item" style="background-color: #1296db">
+        	<div class="weui-grids">
+				<a href="http://www.kancloud.cn/wizardforcel/liaoxuefeng/108427" class="weui-grid js_grid">
+				    <div class="weui-grid__icon">
+				    	<img src="/ico/javascript.png" alt="">
+				    </div>
+			    	<p class="weui-grid__label">JavaScript</p>
+				</a>
+			  	<a href="http://www.kancloud.cn/wizardforcel/liaoxuefeng/108609" class="weui-grid js_grid">
+				    <div class="weui-grid__icon">
+				    	<img src="/ico/python.png" alt="">
+				    </div>
+				    <p class="weui-grid__label">Python</p>
+			  	</a>
+			  	<a href="http://www.kancloud.cn/wizardforcel/liaoxuefeng/108732" class="weui-grid js_grid">
+				    <div class="weui-grid__icon">
+				    	<img src="/ico/git.png" alt="">
+				    </div>
+				    <p class="weui-grid__label">Git</p>
+			  	</a>
+			</div>
+        </div>
     </div>
 
     <div class="weui-tabbar">
@@ -157,16 +183,13 @@
 </div>
 
 <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-<!-- <script src="E:/Git/localRepository/wangqinyu/js/jquery-2.1.4.min.js"></script> -->
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
-<!-- <script src="E:/Git/localRepository/wangqinyu/js/jquery-weui.min.js"></script> -->
 <!-- 如果使用了某些拓展插件还需要额外的JS -->
 <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/swiper.min.js"></script>
-<!-- <script src="E:/Git/localRepository/wangqinyu/js/swiper.min.js"></script> -->
 
 <!-- FKPageTransitions Javascript file -->
 <script src="/js/fkpagetransitions.min.js"></script>
-<!-- <script>
+<script>
     jQuery(document).ready(function() {
 //  技术参考网址：      http://www.htmleaf.com/jQuery/Layout-Interface/201505201869.html
         fkpage = $('.swipPage').FKPageTransitions();
@@ -174,7 +197,7 @@
         fkpage.setSlideMode(cindex);
         $.alert("这位爷里边请，又来看我们王秦豫大帅哥啦", "欢迎！");
     });
-</script> -->
+</script>
 <script>
     function toast() {
         $.toast("向左滑动进行查看", "text");
