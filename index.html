@@ -22,13 +22,16 @@
 
 <div class="weui-tab">
     <div class="weui-tab__bd">
-     <div id="tab1" class="weui-tab__bd-item" >
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active" >
+         	<img src="/images/xyh.jpg" style="width:100%;height:95%;">
+        </div>
+     	<div id="tab2" class="weui-tab__bd-item" >
          	<ul class="swipPage">
 	            <li><img src="/images/0001.jpg" style="width:100%;height:95%;"></li>
 	            <li><img src="/images/0002.jpg" style="width:100%;height:95%;"></li>
     		</ul>
         </div>
-        <div id="tab2" class="weui-tab__bd-item weui-tab__bd-item--active" style="background-image:url("/images/motianlun.png");width: 100%;height: 100% ">
+        <div id="tab3" class="weui-tab__bd-item" style="background-image:url("/images/motianlun.png");width: 100%;height: 100% ">
             <article style="background-color: #229db1 ;text-align: center;color: #2f3238">
                 <h2>中国海洋大学北京校友会</h2><br><br>
                 活动报名<br><br>
@@ -51,8 +54,9 @@
             </article>
           
         </div>
-        <div id="tab3" class="weui-tab__bd-item" style="background-image:url("/images/smoke.jpg");width: 100%;height: 100% ">
+        <div id="tab4" class="weui-tab__bd-item" style="background-image:url("/images/smoke.jpg");width: 100%;height: 100% ">
             <h3>联系方式：<a style="align-content: center;text-align: center;color: #75a9fa">微信:wqy8523</a></h3>
+            
             
             <div><img src="/images/wechat.jpg" style="width:100%;height:100%;"></div>
         </div>
@@ -60,21 +64,28 @@
     </div>
 
     <div class="weui-tabbar">
-        <a href="#tab1" class="weui-tabbar__item" onclick="toast()">
+    	<a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+            <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
+            <div class="weui-tabbar__icon">
+                <img src="/ico/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">校友活动</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item" onclick="toast()">
             <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
             <div class="weui-tabbar__icon">
                 <img src="/ico/icon_nav_button.png" alt="">
             </div>
             <p class="weui-tabbar__label">海大美景</p>
         </a>
-        <a href="#tab2" class="weui-tabbar__item  weui-bar__item--on"  >
+        <a href="#tab3" class="weui-tabbar__item" >
             <div class="weui-tabbar__icon">
                 <img src="/ico/icon_nav_msg.png" alt="">
             </div>
             <p class="weui-tabbar__label">活动报名</p>
         </a>
       
-        <a href="#tab3" class="weui-tabbar__item">
+        <a href="#tab4" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
                 <img src="/ico/icon_nav_cell.png" alt="">
             </div>
